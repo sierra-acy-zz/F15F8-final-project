@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B4E83EBB-B645-48D1-F9FD-2AED5AEC0166" name="F15F8_RFE_Status_Codes">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:15:39 UTC</createdTime>
+<ownerDesignName>F15F8_conceptual</ownerDesignName>
+<engineerTo>
+<item key="50558791-FE98-BB86-712F-E9A2D803F9A2" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="status_code_id" id="64F2C774-29A3-7BEB-9294-5B5AC86036A6">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:15:47 UTC</createdTime>
+<ownerDesignName>F15F8_conceptual</ownerDesignName>
+<engineerTo>
+<item key="50558791-FE98-BB86-712F-E9A2D803F9A2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rfe_status" id="A15A7A27-6595-72A7-A903-8BF26F86E8E5">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:15:58 UTC</createdTime>
+<ownerDesignName>F15F8_conceptual</ownerDesignName>
+<engineerTo>
+<item key="50558791-FE98-BB86-712F-E9A2D803F9A2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="description" id="DA56D2E6-518F-F01E-FBE7-62BDADB23850">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:16:15 UTC</createdTime>
+<ownerDesignName>F15F8_conceptual</ownerDesignName>
+<engineerTo>
+<item key="50558791-FE98-BB86-712F-E9A2D803F9A2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="78ED312F-C449-D726-C427-979DC97AB715" name="F15F8_RFE_Status_Codes PK">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:15:57 UTC</createdTime>
+<ownerDesignName>F15F8_conceptual</ownerDesignName>
+<engineerTo>
+<item key="50558791-FE98-BB86-712F-E9A2D803F9A2" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>64F2C774-29A3-7BEB-9294-5B5AC86036A6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="090AB4CB-5491-1BFF-5CA1-9FC6966829E6" name="F15F8_Chair">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:20:39 UTC</createdTime>
+<ownerDesignName>F15F8_conceptual</ownerDesignName>
+<engineerTo>
+<item key="50558791-FE98-BB86-712F-E9A2D803F9A2" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>EFA29193-4063-3B33-2D5D-6535B523B7A6</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+</Entity>

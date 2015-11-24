@@ -1,0 +1,206 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7D0BF633-14F8-32A9-D80F-01DCF9645100" name="F15F8_RFE_Except_Req">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:11:43 UTC</createdTime>
+<ownerDesignName>F15F8_conceptual</ownerDesignName>
+<engineerTo>
+<item key="50558791-FE98-BB86-712F-E9A2D803F9A2" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="rfe_id" id="059147FA-206C-C2E3-2EF3-EA4E3F3CE810">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:12:01 UTC</createdTime>
+<ownerDesignName>F15F8_conceptual</ownerDesignName>
+<engineerTo>
+<item key="50558791-FE98-BB86-712F-E9A2D803F9A2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="explanation" id="F21EAD64-B85E-DBDA-AC38-53A9C822FA8D">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:12:17 UTC</createdTime>
+<ownerDesignName>F15F8_conceptual</ownerDesignName>
+<engineerTo>
+<item key="50558791-FE98-BB86-712F-E9A2D803F9A2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="alt_protections" id="36291EF1-9E69-8642-B6C7-AC8E244CB328">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:12:34 UTC</createdTime>
+<ownerDesignName>F15F8_conceptual</ownerDesignName>
+<engineerTo>
+<item key="50558791-FE98-BB86-712F-E9A2D803F9A2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="review_date" id="EBAE7439-B1E1-2C03-1ECF-8F503A715430">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:12:48 UTC</createdTime>
+<ownerDesignName>F15F8_conceptual</ownerDesignName>
+<engineerTo>
+<item key="50558791-FE98-BB86-712F-E9A2D803F9A2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="requestor_id" id="3D4ACA94-51E4-5C5C-6659-0B3561B6837A">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:12:58 UTC</createdTime>
+<ownerDesignName>F15F8_conceptual</ownerDesignName>
+<engineerTo>
+<item key="50558791-FE98-BB86-712F-E9A2D803F9A2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="reviewer_id" id="7A0EE26A-1348-71B2-B6A0-7D9496A6B71D">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:13:30 UTC</createdTime>
+<ownerDesignName>F15F8_conceptual</ownerDesignName>
+<engineerTo>
+<item key="50558791-FE98-BB86-712F-E9A2D803F9A2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="sa_approver_id" id="D7447D35-5275-C291-5059-6C49143C204E">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:13:47 UTC</createdTime>
+<ownerDesignName>F15F8_conceptual</ownerDesignName>
+<engineerTo>
+<item key="50558791-FE98-BB86-712F-E9A2D803F9A2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ld_approver_id" id="56C10568-4E67-7920-DE49-CF578D49E128">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:14:25 UTC</createdTime>
+<ownerDesignName>F15F8_conceptual</ownerDesignName>
+<engineerTo>
+<item key="50558791-FE98-BB86-712F-E9A2D803F9A2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cp_approver_id" id="219640E4-5081-BA9C-AC40-7225A145E336">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:14:27 UTC</createdTime>
+<ownerDesignName>F15F8_conceptual</ownerDesignName>
+<engineerTo>
+<item key="50558791-FE98-BB86-712F-E9A2D803F9A2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ed_approver_id" id="F2880F6C-D329-E537-0689-6C17E1662BA4">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:14:30 UTC</createdTime>
+<ownerDesignName>F15F8_conceptual</ownerDesignName>
+<engineerTo>
+<item key="50558791-FE98-BB86-712F-E9A2D803F9A2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="emp_id" id="5BB8F7E9-8D5C-9F65-63AB-801F9841C2AA">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:24:03 UTC</createdTime>
+<generatorID>184B0D08-BED1-1897-FE75-EDC349B24AFF</generatorID>
+<ownerDesignName>F15F8_conceptual</ownerDesignName>
+<engineerTo>
+<item key="50558791-FE98-BB86-712F-E9A2D803F9A2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>6ED29CF5-8D02-7083-CCB6-ECE511A499F4</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="status_code_id" id="E6C782BC-FF22-E7CD-3704-35596005A177">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:35:16 UTC</createdTime>
+<generatorID>88FB574A-47A0-D9DD-CEC2-F3BB83FCE526</generatorID>
+<ownerDesignName>F15F8_conceptual</ownerDesignName>
+<engineerTo>
+<item key="50558791-FE98-BB86-712F-E9A2D803F9A2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>64F2C774-29A3-7BEB-9294-5B5AC86036A6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="status_id" id="8530D642-1267-52B9-DD5B-688695A2B140">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:35:41 UTC</createdTime>
+<generatorID>86497A70-F4DC-811F-CCDC-8ECEA7DC79D5</generatorID>
+<ownerDesignName>F15F8_conceptual</ownerDesignName>
+<engineerTo>
+<item key="50558791-FE98-BB86-712F-E9A2D803F9A2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>B83C2708-95A7-757B-3E86-3E00CA5DFCBB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="50D29A51-2E4C-8C62-3FAC-F103123E70D2" name="F15F8_RFE_Except_Req PK">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:12:16 UTC</createdTime>
+<ownerDesignName>F15F8_conceptual</ownerDesignName>
+<engineerTo>
+<item key="50558791-FE98-BB86-712F-E9A2D803F9A2" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>059147FA-206C-C2E3-2EF3-EA4E3F3CE810</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

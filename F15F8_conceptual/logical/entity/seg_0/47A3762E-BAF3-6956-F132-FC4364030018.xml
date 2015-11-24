@@ -1,0 +1,125 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="47A3762E-BAF3-6956-F132-FC4364030018" name="F15F8_Contacts">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-23 23:47:40 UTC</createdTime>
+<ownerDesignName>F15F8_conceptual</ownerDesignName>
+<engineerTo>
+<item key="50558791-FE98-BB86-712F-E9A2D803F9A2" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="contact_id" id="6ECD665C-6699-A543-40B2-670D67582EEC">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-23 23:47:49 UTC</createdTime>
+<ownerDesignName>F15F8_conceptual</ownerDesignName>
+<engineerTo>
+<item key="50558791-FE98-BB86-712F-E9A2D803F9A2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="contact_role_name" id="4D8AD922-4A85-CF52-758C-5A7167749A52">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-23 23:48:03 UTC</createdTime>
+<ownerDesignName>F15F8_conceptual</ownerDesignName>
+<engineerTo>
+<item key="50558791-FE98-BB86-712F-E9A2D803F9A2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="contact_emp_id" id="2AC2321C-0AC6-9028-187F-8A5884255CB4">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-23 23:48:22 UTC</createdTime>
+<ownerDesignName>F15F8_conceptual</ownerDesignName>
+<engineerTo>
+<item key="50558791-FE98-BB86-712F-E9A2D803F9A2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="effective_date" id="90262EA8-C9A1-2E53-78F5-97255CBAB156">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-23 23:48:43 UTC</createdTime>
+<ownerDesignName>F15F8_conceptual</ownerDesignName>
+<engineerTo>
+<item key="50558791-FE98-BB86-712F-E9A2D803F9A2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="comments" id="A8E18767-5324-798E-6C98-2B4F626EB5E9">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-23 23:48:56 UTC</createdTime>
+<ownerDesignName>F15F8_conceptual</ownerDesignName>
+<engineerTo>
+<item key="50558791-FE98-BB86-712F-E9A2D803F9A2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="emp_id" id="194B1E7D-C559-EE70-4B9E-E9D09835B786">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:22:58 UTC</createdTime>
+<generatorID>CED3A474-84A1-586E-6B7A-8049D25AFFC2</generatorID>
+<ownerDesignName>F15F8_conceptual</ownerDesignName>
+<engineerTo>
+<item key="50558791-FE98-BB86-712F-E9A2D803F9A2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>6ED29CF5-8D02-7083-CCB6-ECE511A499F4</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="role_code_id" id="B85963BB-3CD0-8194-A619-00440345DD15">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:37:37 UTC</createdTime>
+<generatorID>93D2850E-9792-CFE1-0C67-C897A837CD16</generatorID>
+<ownerDesignName>F15F8_conceptual</ownerDesignName>
+<engineerTo>
+<item key="50558791-FE98-BB86-712F-E9A2D803F9A2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>2EB851C5-32CF-45BD-074E-B5E98324CEA7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="70F2B6A3-8476-A849-8660-24D653EBED89" name="F15F8_Contacts PK">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-23 23:48:02 UTC</createdTime>
+<ownerDesignName>F15F8_conceptual</ownerDesignName>
+<engineerTo>
+<item key="50558791-FE98-BB86-712F-E9A2D803F9A2" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6ECD665C-6699-A543-40B2-670D67582EEC</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

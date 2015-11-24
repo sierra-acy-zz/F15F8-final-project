@@ -1,0 +1,245 @@
+DROP SEQUENCE F15F8_Auth_seq ; 
+create sequence F15F8_Auth_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER F15F8_Auth_PK_trig 
+; 
+
+create or replace trigger F15F8_Auth_PK_trig 
+before insert on F15F8_Auth
+for each row 
+begin 
+select F15F8_Auth_seq.nextval into :new.auth_id from dual; 
+end; 
+/
+
+DROP SEQUENCE F15F8_Comment_seq ; 
+create sequence F15F8_Comment_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER F15F8_Comment_PK_trig 
+; 
+
+create or replace trigger F15F8_Comment_PK_trig 
+before insert on F15F8_Comment
+for each row 
+begin 
+select F15F8_Comment_seq.nextval into :new.comment_id from dual; 
+end; 
+/
+
+DROP SEQUENCE F15F8_Contacts_seq ; 
+create sequence F15F8_Contacts_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER F15F8_Contacts_PK_trig 
+; 
+
+create or replace trigger F15F8_Contacts_PK_trig 
+before insert on F15F8_Contacts
+for each row 
+begin 
+select F15F8_Contacts_seq.nextval into :new.contact_id from dual; 
+end; 
+/
+
+
+
+
+
+
+DROP SEQUENCE F15F8_Role_Codes_seq ; 
+create sequence F15F8_Role_Codes_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER F15F8_Role_Codes_PK_trig 
+; 
+
+create or replace trigger F15F8_Role_Codes_PK_trig 
+before insert on F15F8_Role_Codes
+for each row 
+begin 
+select F15F8_Role_Codes_seq.nextval into :new.role_code_id from dual; 
+end; 
+/
+
+
+
+
+
+DROP SEQUENCE F15F8_Document_seq ; 
+create sequence F15F8_Document_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER F15F8_Document_PK_trig 
+; 
+
+create or replace trigger F15F8_Document_PK_trig 
+before insert on F15F8_Document
+for each row 
+begin 
+select F15F8_Document_seq.nextval into :new.doc_id from dual; 
+end; 
+/
+
+DROP SEQUENCE F15F8_Employee_seq ; 
+create sequence F15F8_Employee_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER F15F8_Employee_PK_trig 
+; 
+
+create or replace trigger F15F8_Employee_PK_trig 
+before insert on F15F8_Employee
+for each row 
+begin 
+select F15F8_Employee_seq.nextval into :new.emp_id from dual; 
+end; 
+/
+
+DROP SEQUENCE F15F8_History_seq ; 
+create sequence F15F8_History_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER F15F8_History_PK_trig 
+; 
+
+create or replace trigger F15F8_History_PK_trig 
+before insert on F15F8_History
+for each row 
+begin 
+select F15F8_History_seq.nextval into :new.hist_id from dual; 
+end; 
+/
+
+DROP SEQUENCE F15F8_Lab_seq ; 
+create sequence F15F8_Lab_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER F15F8_Lab_PK_trig 
+; 
+
+create or replace trigger F15F8_Lab_PK_trig 
+before insert on F15F8_Lab
+for each row 
+begin 
+select F15F8_Lab_seq.nextval into :new.lab_id from dual; 
+end; 
+/
+
+DROP SEQUENCE F15F8_RFE_Except_Req_seq ; 
+create sequence F15F8_RFE_Except_Req_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER F15F8_RFE_Except_Req_PK_trig 
+; 
+
+create or replace trigger F15F8_RFE_Except_Req_PK_trig 
+before insert on F15F8_RFE_Except_Req
+for each row 
+begin 
+select F15F8_RFE_Except_Req_seq.nextval into :new.rfe_id from dual; 
+end; 
+/
+
+DROP SEQUENCE F15F8_RFE_Status_Codes_seq ; 
+create sequence F15F8_RFE_Status_Codes_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER F15F8_RFE_Status_Codes_PK_trig 
+; 
+
+create or replace trigger F15F8_RFE_Status_Codes_PK_trig 
+before insert on F15F8_RFE_Status_Codes
+for each row 
+begin 
+select F15F8_RFE_Status_Codes_seq.nextval into :new.status_code_id from dual; 
+end; 
+/
+
+DROP SEQUENCE F15F8_Status_seq ; 
+create sequence F15F8_Status_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER F15F8_Status_PK_trig 
+; 
+
+create or replace trigger F15F8_Status_PK_trig 
+before insert on F15F8_Status
+for each row 
+begin 
+select F15F8_Status_seq.nextval into :new.status_id from dual; 
+end; 
+/
+
+DROP SEQUENCE F15F8_Task_seq ; 
+create sequence F15F8_Task_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER F15F8_Task_PK_trig 
+; 
+
+create or replace trigger F15F8_Task_PK_trig 
+before insert on F15F8_Task
+for each row 
+begin 
+select F15F8_Task_seq.nextval into :new.task_id from dual; 
+end; 
+/
+
+DROP INDEX emp_id_FK_0 ;
+CREATE INDEX emp_id_FK_0 ON Approver_Rel(emp_id) ;
+DROP INDEX rfe_id_FK_1 ;
+CREATE INDEX rfe_id_FK_1 ON Approver_Rel(rfe_id) ;
+DROP INDEX emp_id_FK_2 ;
+CREATE INDEX emp_id_FK_2 ON F15F8_Contacts(emp_id) ;
+DROP INDEX rfe_id_FK_3 ;
+CREATE INDEX rfe_id_FK_3 ON F15F8_Document(rfe_id) ;
+DROP INDEX auth_id_FK_4 ;
+CREATE INDEX auth_id_FK_4 ON F15F8_Employee(auth_id) ;
+DROP INDEX lab_id_FK_5 ;
+CREATE INDEX lab_id_FK_5 ON F15F8_Employee(lab_id) ;
+DROP INDEX emp_id_FK_6 ;
+CREATE INDEX emp_id_FK_6 ON Contractor_Rel(emp_id) ;
+DROP INDEX rfe_id_FK_7 ;
+CREATE INDEX rfe_id_FK_7 ON F15F8_History(rfe_id) ;
+DROP INDEX rfe_id_FK_8 ;
+CREATE INDEX rfe_id_FK_8 ON F15F8_Comment(rfe_id) ;
+DROP INDEX F15F8_RFE_Except_Req_r_FK_9 ;
+CREATE INDEX F15F8_RFE_Except_Req_r_FK_9 ON task_rel(F15F8_RFE_Except_Req_rfe_id) ;
+DROP INDEX rfe_id_FK_10 ;
+CREATE INDEX rfe_id_FK_10 ON Contractor_Rel(rfe_id) ;
+DROP INDEX status_code_id_FK_11 ;
+CREATE INDEX status_code_id_FK_11 ON F15F8_Status(status_code_id) ;
+DROP INDEX F15F8_Task_task_id_FK_12 ;
+CREATE INDEX F15F8_Task_task_id_FK_12 ON task_rel(F15F8_Task_task_id) ;
+DROP INDEX emp_id_FK_13 ;
+CREATE INDEX emp_id_FK_13 ON F15F8_RFE_Except_Req(emp_id) ;
+DROP INDEX status_code_id_FK_14 ;
+CREATE INDEX status_code_id_FK_14 ON F15F8_RFE_Except_Req(status_code_id) ;
+DROP INDEX status_id_FK_15 ;
+CREATE INDEX status_id_FK_15 ON F15F8_RFE_Except_Req(status_id) ;

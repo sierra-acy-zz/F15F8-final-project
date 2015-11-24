@@ -1,0 +1,741 @@
+alter table F15F8_History disable constraint F15F8_History_PK;
+alter table F15F8_Document disable constraint F15F8_Document_PK;
+alter table F15F8_Contacts disable constraint F15F8_Contacts_PK;
+alter table F15F8_Role_Codes disable constraint F15F8_Role_Codes_PK;
+alter table F15F8_Contacts disable constraint F15F8_Contacts_Employee_FK;
+alter table F15F8_Comment disable constraint F15F8_Comment_PK;
+alter table Approver_Rel disable constraint Approver_Rel_Except_Req_FK;
+alter table Approver_Rel disable constraint Approver_Rel_Employee_FK;
+alter table F15F8_Document disable constraint F15F8_Doc_RFE_Except_FK;
+alter table F15F8_History disable constraint F15F8_History_Except_Req_FK;
+alter table F15F8_Comment disable constraint F15F8_RFE_Except_Com_FK;
+alter table task_rel disable constraint F15F8_RFE_Except_FK;
+alter table task_rel disable constraint F15F8_Task_FK;
+alter table Contractor_Rel disable constraint F15F8_RFE_Except_Req_FK;
+alter table Contractor_Rel disable constraint F15F8_Employee_FK;
+alter table F15F8_RFE_Except_Req disable constraint F15F8_RFE_Except_Req_PK;
+alter table F15F8_RFE_Except_Req disable constraint RFE_Exc_Employee_FK;
+alter table F15F8_RFE_Except_Req disable constraint RFE_Status_FK;
+alter table F15F8_RFE_Except_Req disable constraint RFE_Status_Codes_FK;
+alter table F15F8_Employee disable constraint F15F8_Employee_PK;
+alter table F15F8_Employee disable constraint F15F8_Emp_Auth_FK;
+alter table F15F8_Employee disable constraint F15F8_Emp_Lab_FK;
+alter table F15F8_Auth disable constraint F15F8_Auth_PK;
+alter table F15F8_Lab disable constraint F15F8_Lab_PK;
+alter table F15F8_Task disable constraint F15F8_Task_PK;
+alter table F15F8_Status disable constraint F15F8_Status_PK;
+alter table F15F8_Status disable constraint F15F8_Status_Status_Codes_FK;
+alter table F15F8_RFE_Status_Codes disable constraint F15F8_RFE_Status_Codes_PK;
+
+alter trigger F15F8_employee_trigger disable;
+alter trigger F15F8_execdir_trigger disable;
+alter trigger F15F8_admin_trigger disable;
+alter trigger F15F8_labdir_trigger disable;
+alter trigger F15F8_chair_trigger disable;
+
+truncate table F15F8_Employee;
+truncate table F15F8_Contacts;
+truncate table F15F8_Role_Codes;
+truncate table F15F8_Lab;
+truncate table F15F8_History;
+truncate table F15F8_Status;
+truncate table F15F8_RFE_Status_Codes;
+truncate table F15F8_RFE_Except_Req;
+truncate table F15F8_Task;
+truncate table F15F8_Document;
+truncate table F15F8_Comment;
+truncate table F15F8_Auth;
+
+alter table F15F8_Status enable constraint F15F8_Status_PK;
+alter table F15F8_RFE_Status_Codes enable constraint F15F8_RFE_Status_Codes_PK;
+alter table F15F8_Status enable constraint F15F8_Status_Status_Codes_FK;
+alter table F15F8_Task enable constraint F15F8_Task_PK;
+alter table F15F8_Lab enable constraint F15F8_Lab_PK;
+alter table F15F8_Auth enable constraint F15F8_Auth_PK;
+alter table F15F8_Employee enable constraint F15F8_Emp_Lab_FK;
+alter table F15F8_Employee enable constraint F15F8_Emp_Auth_FK;
+alter table F15F8_Employee enable constraint F15F8_Employee_PK;
+alter table F15F8_RFE_Except_Req enable constraint RFE_Status_Codes_FK;
+alter table F15F8_RFE_Except_Req enable constraint RFE_Status_FK;
+alter table F15F8_RFE_Except_Req enable constraint RFE_Exc_Employee_FK;
+alter table F15F8_RFE_Except_Req enable constraint F15F8_RFE_Except_Req_PK;
+alter table Contractor_Rel enable constraint F15F8_Employee_FK;
+alter table Contractor_Rel enable constraint F15F8_RFE_Except_Req_FK;
+alter table task_rel enable constraint F15F8_Task_FK;
+alter table task_rel enable constraint F15F8_RFE_Except_FK;
+alter table F15F8_Comment enable constraint F15F8_RFE_Except_Com_FK;
+alter table F15F8_History enable constraint F15F8_History_Except_Req_FK;
+alter table F15F8_Document enable constraint F15F8_Doc_RFE_Except_FK;
+alter table Approver_Rel enable constraint Approver_Rel_Employee_FK;
+alter table Approver_Rel enable constraint Approver_Rel_Except_Req_FK;
+alter table F15F8_Comment enable constraint F15F8_Comment_PK;
+alter table F15F8_Contacts enable constraint F15F8_Contacts_Employee_FK;
+alter table F15F8_Contacts enable constraint F15F8_Contacts_PK;
+alter table F15F8_Role_Codes enable constraint F15F8_Role_Codes_PK;
+alter table F15F8_Document enable constraint F15F8_Document_PK;
+alter table F15F8_History enable constraint F15F8_History_PK;
+
+alter trigger F15F8_employee_trigger enable;
+alter trigger F15F8_execdir_trigger enable;
+alter trigger F15F8_admin_trigger enable;
+alter trigger F15F8_labdir_trigger enable;
+alter trigger F15F8_chair_trigger enable;
+
+
+DROP SEQUENCE F15F8_RFE_Status_Codes_seq ; 
+create sequence F15F8_RFE_Status_Codes_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+DROP SEQUENCE F15F8_Lab_seq ; 
+create sequence F15F8_Lab_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+DROP SEQUENCE F15F8_Auth_seq ; 
+create sequence F15F8_Auth_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+DROP SEQUENCE F15F8_Comment_seq ; 
+create sequence F15F8_Comment_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+DROP SEQUENCE F15F8_Contacts_seq ; 
+create sequence F15F8_Contacts_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+
+DROP SEQUENCE F15F8_Role_Codes_seq ; 
+create sequence F15F8_Role_Codes_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+DROP SEQUENCE F15F8_Document_seq ; 
+create sequence F15F8_Document_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+DROP SEQUENCE F15F8_Employee_seq ; 
+create sequence F15F8_Employee_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+DROP SEQUENCE F15F8_History_seq ; 
+create sequence F15F8_History_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+DROP SEQUENCE F15F8_RFE_Except_Req_seq ; 
+create sequence F15F8_RFE_Except_Req_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+DROP SEQUENCE F15F8_Status_seq ; 
+create sequence F15F8_Status_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+DROP SEQUENCE F15F8_Task_seq ; 
+create sequence F15F8_Task_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+--TASK
+
+insert into F15F8_Task(effective_date, task_abbrv, task_desc, rfe_id) values (
+  SYSDATE,
+  'Abbreviation',
+  'Description',
+   101
+);
+
+insert into F15F8_Task(effective_date, task_abbrv, task_desc, rfe_id) values (
+  SYSDATE,
+  'Abbrv',
+  'Desc',
+    102
+);
+
+insert into F15F8_Task(effective_date, task_abbrv, task_desc, rfe_id) values (
+  SYSDATE,
+  'Abb',
+  'Des',
+    101
+);
+
+insert into F15F8_Task(effective_date, task_abbrv, task_desc, rfe_id) values (
+  SYSDATE,
+  'A',
+  'D',
+    102
+);
+
+insert into F15F8_Task(effective_date, task_abbrv, task_desc, rfe_id) values (
+  SYSDATE,
+  'ABBV',
+  'This is a description.',
+    102
+);
+
+
+--LAB
+
+insert into F15F8_Lab (lab_id) values (
+  100
+);
+
+insert into F15F8_Lab (lab_id) values (
+  200
+);
+
+insert into F15F8_Lab (lab_id) values (
+  300
+);
+
+insert into F15F8_Lab (lab_id) values (
+  400
+);
+
+insert into F15F8_Lab (lab_id) values (
+  500
+);
+
+--AUTH
+
+insert into F15F8_Auth("right") values (
+  'edit'
+);
+
+insert into F15F8_Auth("right") values (
+  'read'
+);
+
+--EMPLOYEES
+
+insert into F15F8_Employee (emp_name, emp_email, emp_office, emp_phone, emp_status, emp_status_date, emp_admin_flag, emp_labdir_flag, emp_chair_flag, emp_execdir_flag, lab_id, auth_id) values (
+  'Sierra',
+  'sierra.acy@gmail.com',
+  'SOffice',
+  '7134086917',
+  'A',
+  SYSDATE,
+  0,
+  0,
+  1,
+  0,
+  100,
+  100
+);
+
+
+insert into F15F8_Employee (emp_name, emp_email, emp_office, emp_phone, emp_status, emp_status_date, emp_admin_flag, emp_labdir_flag, emp_chair_flag, emp_execdir_flag, lab_id, auth_id) values (
+  'Bob',
+  'bob@foobar.com',
+  'W123',
+  '2109139957',
+  'A',
+  SYSDATE,
+  1,
+  0,
+  0,
+  0,
+  100,
+  101
+);
+
+
+insert into F15F8_Employee (emp_name, emp_email, emp_office, emp_phone, emp_status, emp_status_date, emp_admin_flag, emp_labdir_flag, emp_chair_flag, emp_execdir_flag, lab_id, auth_id) values (
+  'Natahlie',
+  'natahlie@nathahlie.com',
+  'NOffice',
+  '7777777777',
+  'I',
+  SYSDATE,
+  0,
+  0,
+  0,
+  1,
+  101,
+  100
+);
+
+insert into F15F8_Employee (emp_name, emp_email, emp_office, emp_phone, emp_status, emp_status_date, emp_admin_flag, emp_labdir_flag, emp_chair_flag, emp_execdir_flag, lab_id, auth_id) values (
+  'Nalisia',
+  'nalisia@nalisia.com',
+  'NaOffice',
+  '5555555555',
+  'A',
+  SYSDATE,
+  1,
+  0,
+  0,
+  0,
+  102,
+  101
+);
+
+insert into F15F8_Employee (emp_name, emp_email, emp_office, emp_phone, emp_status, emp_status_date, emp_admin_flag, emp_labdir_flag, emp_chair_flag, emp_execdir_flag, lab_id, auth_id) values (
+  'Scott',
+  'scott@scott.com',
+  'SMOffice',
+  '4444444444',
+  'A',
+  SYSDATE,
+  0,
+  1,
+  0,
+  0,
+  102,
+  101
+);
+
+insert into F15F8_Employee (emp_name, emp_email, emp_office, emp_phone, emp_status, emp_status_date, emp_admin_flag, emp_labdir_flag, emp_chair_flag, emp_execdir_flag, lab_id, auth_id) values (
+  'Danny',
+  'danny@danny.com',
+  'DOffice',
+  '2222222222',
+  'I',
+  SYSDATE,
+  1,
+  0,
+  0,
+  0,
+  103,
+  100
+);
+
+
+insert into F15F8_Employee (emp_name, emp_email, emp_office, emp_phone, emp_status, emp_status_date, emp_admin_flag, emp_labdir_flag, emp_chair_flag, emp_execdir_flag, lab_id, auth_id) values (
+  'Andy',
+  'andy@andy.com',
+  'AOffice',
+  '3333333333',
+  'I',
+  SYSDATE,
+  0,
+  1,
+  0,
+  0,
+  104,
+  100
+);
+
+--RFE_STATUS_CODES
+
+insert into F15F8_RFE_Status_Codes(rfe_status, description) values (
+  'Entered',
+  'The RFE has been created but has not yet been submitted for approval.'
+);
+
+insert into F15F8_RFE_Status_Codes(rfe_status, description) values (
+  'Submitted',
+  'The RFE has been submitted to the Lab System Administrator for approval.'
+);
+
+insert into F15F8_RFE_Status_Codes(rfe_status, description) values (
+  'Returned',
+  'The RFE hsa been returned for further information and clarification. Once Submitted again, it will follow the same routing as an Entered RFE'
+);
+
+insert into F15F8_RFE_Status_Codes(rfe_status, description) values (
+  'Recalled',
+  'The requestor has recalled an RFE that has not yet reached final approval. Once Submitted again, it will follow the same routing as an Entered RFE'
+);
+
+insert into F15F8_RFE_Status_Codes(rfe_status, description) values (
+  'Rejected',
+  'The RFE has been rejected and cannot be implemented.'
+);
+
+insert into F15F8_RFE_Status_Codes(rfe_status, description) values (
+  'SA Approved',
+  'The Lab System Administrator has approved the RFE; it has been submitted for the Lab Director approval'
+);
+
+insert into F15F8_RFE_Status_Codes(rfe_status, description) values (
+  'LD Approved',
+  'The Lab Director has approved the RFE; it has been submitted for the Network Security Panel Approval'
+);
+
+insert into F15F8_RFE_Status_Codes(rfe_status, description) values (
+  'CH Approval',
+  'The Lab Direct has approved the RFE; it has been submitted ot the Chairperson of Security Panel approval'
+);
+
+insert into F15F8_RFE_Status_Codes(rfe_status, description) values (
+  'Final Approved',
+  'The Executive Directors Office has given final approval for the RFE and it may be implemented'
+);
+
+--STATUS
+
+insert into F15F8_Status(status_code, effective_date, entered_by_id, status_code_id) values (
+  '1',
+  SYSDATE,
+  100,
+  100
+);
+
+
+insert into F15F8_Status(status_code, effective_date, entered_by_id, status_code_id) values (
+  '3',
+  SYSDATE,
+  100,
+  101
+);
+
+--RFE_EXCEPT_REQ
+
+insert into F15F8_RFE_Except_Req(explanation, alt_protections, review_date, emp_id, status_id, status_code_id, requestor_id, reviewer_id, sa_approver_id, ld_approver_id, cp_approver_id, ed_approver_id) values (
+  'Explanation',
+  'Alt protections',
+  SYSDATE,
+  100,
+  100,
+  100,
+  100,
+  103,
+  105,
+  106,
+  100,
+  102
+);
+
+insert into F15F8_RFE_Except_Req(explanation, alt_protections, review_date, emp_id, status_id, status_code_id, requestor_id, reviewer_id, sa_approver_id, ld_approver_id, cp_approver_id, ed_approver_id) values (
+  'Explanation',
+  'Alt protections',
+  SYSDATE,
+  101,
+  101,
+  100,
+  101,
+  103,
+  105,
+  106,
+  100,
+  102
+);
+
+insert into F15F8_RFE_Except_Req(explanation, alt_protections, review_date, emp_id, status_id, status_code_id, requestor_id, reviewer_id, sa_approver_id, ld_approver_id, cp_approver_id, ed_approver_id) values (
+  'Explanation',
+  'Alt protections',
+  SYSDATE,
+  102,
+  101,
+  100,
+  103,
+  101,
+  105,
+  106,
+  100,
+  102
+);
+
+insert into F15F8_RFE_Except_Req(explanation, alt_protections, review_date, emp_id, status_id, status_code_id, requestor_id, reviewer_id, sa_approver_id, ld_approver_id, cp_approver_id, ed_approver_id) values (
+  'Explanation',
+  'Alt protections',
+  SYSDATE,
+  103,
+  100,
+  101,
+  103,
+  101,
+  105,
+  106,
+  100,
+  102
+);
+
+insert into F15F8_RFE_Except_Req(explanation, alt_protections, review_date, emp_id, status_id, status_code_id, requestor_id, reviewer_id, sa_approver_id, ld_approver_id, cp_approver_id, ed_approver_id) values (
+  'Explanation',
+  'Alt protections',
+  SYSDATE,
+  104,
+  101,
+  101,
+  103,
+  101,
+  105,
+  106,
+  100,
+  102
+);
+
+insert into F15F8_RFE_Except_Req(explanation, alt_protections, review_date, emp_id, status_id, status_code_id, requestor_id, reviewer_id, sa_approver_id, ld_approver_id, cp_approver_id, ed_approver_id) values (
+  'Explanation',
+  'Alt protections',
+  SYSDATE,
+  100,
+  101,
+  100,
+  103,
+  101,
+  105,
+  106,
+  100,
+  102
+);
+
+
+--COMMENT
+
+insert into F15F8_Comment(entered_by_id, entry_date, "comment", rfe_id) values (
+  100,
+  SYSDATE,
+  'Testing1',
+  100
+);
+
+insert into F15F8_Comment(entered_by_id, entry_date, "comment", rfe_id) values (
+  101,
+  SYSDATE,
+  'Testing2',
+  101
+);
+
+insert into F15F8_Comment(entered_by_id, entry_date, "comment", rfe_id) values (
+  102,
+  SYSDATE,
+  'Testing3',
+  102
+);
+
+insert into F15F8_Comment(entered_by_id, entry_date, "comment", rfe_id) values (
+  103,
+  SYSDATE,
+  'Testing4',
+  103
+);
+
+insert into F15F8_Comment(entered_by_id, entry_date, "comment", rfe_id) values (
+  104,
+  SYSDATE,
+  'Testing5',
+  104
+);
+
+insert into F15F8_Comment(entered_by_id, entry_date, "comment", rfe_id) values (
+  104,
+  SYSDATE,
+  'Testing6',
+  105
+);
+
+--ROLE CODES
+
+insert into F15F8_Role_Codes(role_code_num, role_code_name, role_code_desc) values (
+  1,
+  'Requestor',
+  'The employee who created the RFE'
+);
+
+insert into F15F8_Role_Codes(role_code_num, role_code_name, role_code_desc) values (
+  2,
+  'FYI Reviewer',
+  'An employee with peripheral interests; will automatially get notified at certain stages.'
+);
+
+insert into F15F8_Role_Codes(role_code_num, role_code_name, role_code_desc) values (
+  3,
+  'Sys Admin Approver',
+  'First round approver for the new RFEs in their lab'
+);
+
+insert into F15F8_Role_Codes(role_code_num, role_code_name, role_code_desc) values (
+  4,
+  'Lab Director Approver',
+  'Second round approver for new RFEs in their lab'
+);
+
+insert into F15F8_Role_Codes(role_code_num, role_code_name, role_code_desc) values (
+  5,
+  'Chairperson Approver',
+  'Network Security Panel Approver'
+);
+
+insert into F15F8_Role_Codes(role_code_num, role_code_name, role_code_desc) values (
+  6,
+  'Exec Dir Approver',
+  'Final round approver for all RFEs'
+);
+
+--CONTACTS
+
+insert into F15F8_Contacts(contact_role_name, contact_emp_id, effective_date, comments, emp_id) values (
+  'Requestor',
+  105,
+  SYSDATE,
+  'Testing',
+  105
+);
+
+insert into F15F8_Contacts(contact_role_name, contact_emp_id, effective_date, comments, emp_id) values (
+  'FYI Reviewer',
+  101,
+  SYSDATE,
+  'Testing',
+  101
+);
+
+insert into F15F8_Contacts(contact_role_name, contact_emp_id, effective_date, comments, emp_id) values (
+  'Sys Admin Approver',
+  101,
+  SYSDATE,
+  'Testing',
+  101
+);
+
+insert into F15F8_Contacts(contact_role_name, contact_emp_id, effective_date, comments, emp_id) values (
+  'Lab Director Approver',
+  104,
+  SYSDATE,
+  'Testing',
+  104
+);
+
+insert into F15F8_Contacts(contact_role_name, contact_emp_id, effective_date, comments, emp_id) values (
+  'Chairperson Approver',
+  100,
+  SYSDATE,
+  'Testing',
+  100
+);
+
+insert into F15F8_Contacts(contact_role_name, contact_emp_id, effective_date, comments, emp_id) values (
+  'Exec Dir Approver',
+  102,
+  SYSDATE,
+  'Testing',
+  102
+);
+
+--Role Codes For Contacts
+
+insert into F15F8_Contacts(contact_role_name, contact_emp_id, effective_date, comments, emp_id) values (
+    'Requestor',
+    100,
+    SYSDATE,
+    'Comment 1',
+    100
+);
+
+
+insert into F15F8_Contacts(contact_role_name, contact_emp_id, effective_date, comments, emp_id) values (
+    'Chairperson Approver',
+    101,
+    SYSDATE,
+    'Comment 2',
+    101
+);
+
+insert into F15F8_Contacts(contact_role_name, contact_emp_id, effective_date, comments, emp_id) values (
+    'Reviewer',
+    102,
+    SYSDATE,
+    'Comment 3',
+    102
+);
+
+insert into F15F8_Contacts(contact_role_name, contact_emp_id, effective_date, comments, emp_id) values (
+    'Requestor',
+    103,
+    SYSDATE,
+    'Comment 4',
+    103
+);
+
+insert into F15F8_Contacts(contact_role_name, contact_emp_id, effective_date, comments, emp_id) values (
+    'Sys Admin Approver',
+    104,
+    SYSDATE,
+    'Comment 5',
+    104
+);
+
+insert into F15F8_Contacts(contact_role_name, contact_emp_id, effective_date, comments, emp_id) values (
+    'Lab Director Approver',
+    105,
+    SYSDATE,
+    'Comment 6',
+    105
+);
+
+--DOCUMENT
+
+insert into F15F8_Document(rfe_id, file_name, created_by, date_created ) values (
+  100,
+  'file1',
+  1234,
+  SYSDATE
+);
+
+insert into F15F8_Document(rfe_id, file_name, created_by, date_created) values (
+  101,
+  'file2',
+  4567,
+  SYSDATE
+);
+
+insert into F15F8_Document(rfe_id, file_name, created_by, date_created) values (
+  102,
+  'file3',
+  7891,
+  SYSDATE
+);
+
+insert into F15F8_Document(rfe_id, file_name, created_by, date_created) values (
+  103,
+  'file4',
+  5678,
+  SYSDATE
+);
+
+insert into F15F8_Document(rfe_id, file_name, created_by, date_created) values (
+  104,
+  'file5',
+  1200,
+  SYSDATE
+);
+
+insert into F15F8_Document(rfe_id, file_name, created_by, date_created) values (
+  105,
+  'file6',
+  1234,
+  SYSDATE
+);
+
+--HISTORY
+
+insert into F15F8_History(status_code, effective_date, entered_by_id, rfe_id) values (
+  'A',
+  SYSDATE,
+  1,
+  100
+);

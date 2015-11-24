@@ -1,0 +1,292 @@
+drop view F15F8_Employee_view;
+drop view F15F8_execdir_view;
+drop view F15F8_admin_view;
+drop view F15F8_chair_view;
+drop view F15F8_labdir_view;
+
+
+create view F15F8_Employee_view as
+SELECT
+	emp_id,
+	emp_name,
+	emp_email,
+	emp_office,
+	emp_phone,
+	emp_status,
+	emp_status_date,
+	emp_admin_flag,
+	emp_labdir_flag,
+	emp_chair_flag,
+	emp_execdir_flag,
+	lab_id,
+	auth_id
+FROM F15F8_Employee;
+
+--employee trigger -> no flags
+
+
+create or replace TRIGGER F15F8_employee_trigger
+INSTEAD OF insert ON F15F8_Employee_view
+FOR EACH ROW
+BEGIN
+    insert into F15F8_Employee(
+	emp_id,
+	emp_name,
+	emp_email,
+	emp_office,
+	emp_phone,
+	emp_status,
+	emp_status_date,
+	emp_admin_flag,
+	emp_labdir_flag,
+	emp_chair_flag,
+	emp_execdir_flag,
+	lab_id,
+	auth_id)
+	VALUES (
+	:NEW.emp_id,
+	:NEW.emp_name,
+	:NEW.emp_email,
+	:NEW.emp_office,
+	:NEW.emp_phone,
+	:NEW.emp_status,
+	:NEW.emp_status_date,
+	0,
+	0,
+	0,
+	0,
+	:NEW.lab_id,
+	:NEW.auth_id);
+	END;
+/
+
+create view F15F8_execdir_view as
+SELECT 
+	emp_id,
+	emp_name,
+	emp_email,
+	emp_office,
+	emp_phone,
+	emp_status,
+	emp_status_date,
+	emp_admin_flag,
+	emp_labdir_flag,
+	emp_chair_flag,
+	emp_execdir_flag,
+	lab_id,
+	auth_id
+
+FROM F15F8_Employee where emp_execdir_flag = 1;
+
+
+--execdir trigger -> execdir flag = 1
+
+create or replace TRIGGER F15F8_execdir_trigger
+INSTEAD OF insert on F15F8_execdir_view
+FOR EACH ROW
+BEGIN
+insert into F15F8_Employee(
+	emp_id,
+	emp_name,
+	emp_email,
+	emp_office,
+	emp_phone,
+	emp_status,
+	emp_status_date,
+	emp_admin_flag,
+	emp_labdir_flag,
+	emp_chair_flag,
+	emp_execdir_flag,
+	lab_id,
+	auth_id)
+	VALUES (
+	:NEW.emp_id,
+	:NEW.emp_name,
+	:NEW.emp_email,
+	:NEW.emp_office,
+	:NEW.emp_phone,
+	:NEW.emp_status,
+	:NEW.emp_status_date,
+	:NEW.emp_admin_flag,
+	:NEW.emp_labdir_flag,
+	:NEW.emp_chair_flag,
+	1,
+	:NEW.lab_id,
+	:NEW.auth_id);
+END;
+/
+
+create view F15F8_admin_view as
+SELECT 
+	emp_id,
+	emp_name,
+	emp_email,
+	emp_office,
+	emp_phone,
+	emp_status,
+	emp_status_date,
+	emp_admin_flag,
+	emp_labdir_flag,
+	emp_chair_flag,
+	emp_execdir_flag,
+	lab_id,
+	auth_id
+
+FROM F15F8_Employee where emp_admin_flag = 1;
+
+
+
+---admin trigger  --> admin trigger = 1
+
+create or replace TRIGGER F15F8_admin_trigger
+INSTEAD OF insert on F15F8_admin_view
+FOR EACH ROW
+BEGIN
+insert into F15F8_Employee(
+	emp_id,
+	emp_name,
+	emp_email,
+	emp_office,
+	emp_phone,
+	emp_status,
+	emp_status_date,
+	emp_admin_flag,
+	emp_labdir_flag,
+	emp_chair_flag,
+emp_execdir_flag,
+	lab_id,
+	auth_id)
+	VALUES (
+	:NEW.emp_id,
+	:NEW.emp_name,
+	:NEW.emp_email,
+	:NEW.emp_office,
+	:NEW.emp_phone,
+	:NEW.emp_status,
+	:NEW.emp_status_date,
+	1,
+	:NEW.emp_labdir_flag,
+	:NEW.emp_chair_flag,
+	:NEW.emp_execdir_flag,
+	:NEW.lab_id,
+	:NEW.auth_id);
+END;
+/
+
+        
+create view F15F8_labdir_view as
+SELECT 
+	emp_id,
+	emp_name,
+	emp_email,
+	emp_office,
+	emp_phone,
+	emp_status,
+	emp_status_date,
+	emp_admin_flag,
+	emp_labdir_flag,
+	emp_chair_flag,
+	emp_execdir_flag,
+	lab_id,
+	auth_id
+
+FROM F15F8_Employee where emp_labdir_flag = 1;
+
+
+--labdir trigger -> labdir flag = 1
+
+create or replace TRIGGER F15F8_labdir_trigger
+INSTEAD OF insert on F15F8_labdir_view
+FOR EACH ROW
+BEGIN
+insert into F15F8_Employee(
+	emp_id,
+	emp_name,
+	emp_email,
+	emp_office,
+	emp_phone,
+	emp_status,
+	emp_status_date,
+	emp_admin_flag,
+	emp_labdir_flag,
+	emp_chair_flag,
+	emp_execdir_flag,
+	lab_id,
+	auth_id)
+	VALUES (
+	:NEW.emp_id,
+	:NEW.emp_name,
+	:NEW.emp_email,
+	:NEW.emp_office,
+	:NEW.emp_phone,
+	:NEW.emp_status,
+	:NEW.emp_status_date,
+	:NEW.emp_admin_flag,
+	1,
+	:NEW.emp_chair_flag,
+	:NEW.emp_execdir_flag,
+	:NEW.lab_id,
+	:NEW.auth_id);
+END;
+/
+
+create view F15F8_chair_view as
+SELECT 
+	emp_id,
+	emp_name,
+	emp_email,
+	emp_office,
+	emp_phone,
+	emp_status,
+	emp_status_date,
+	emp_admin_flag,
+	emp_labdir_flag,
+	emp_chair_flag,
+	emp_execdir_flag,
+	lab_id,
+	auth_id
+
+FROM F15F8_Employee where emp_chair_flag = 1;
+
+
+--chairperson trigger -> chair person flag = 1
+
+create or replace TRIGGER F15F8_chair_trigger
+INSTEAD OF insert on F15F8_chair_view
+FOR EACH ROW
+BEGIN
+insert into F15F8_Employee(
+	emp_id,
+	emp_name,
+	emp_email,
+	emp_office,
+	emp_phone,
+	emp_status,
+	emp_status_date,
+	emp_admin_flag,
+	emp_labdir_flag,
+	emp_chair_flag,
+	emp_execdir_flag,
+	lab_id,
+	auth_id)
+	VALUES (
+	:NEW.emp_id,
+	:NEW.emp_name,
+	:NEW.emp_email,
+	:NEW.emp_office,
+	:NEW.emp_phone,
+	:NEW.emp_status,
+	:NEW.emp_status_date,
+	:NEW.emp_admin_flag,
+	:NEW.emp_labdir_flag,
+	1,
+	:NEW.emp_execdir_flag,
+	:NEW.lab_id,
+	:NEW.auth_id);
+END;
+/
+
+
+
+
+

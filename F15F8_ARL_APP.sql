@@ -27,7 +27,7 @@ prompt APPLICATION 22584 - F15F8_ARL
 -- Application Export:
 --   Application:     22584
 --   Name:            F15F8_ARL
---   Date and Time:   08:42 Tuesday November 24, 2015
+--   Date and Time:   17:19 Tuesday November 24, 2015
 --   Exported By:     NATAHLIEBEAVERS@GMAIL.COM
 --   Flashback:       0
 --   Export Type:     Application Export
@@ -107,7 +107,7 @@ wwv_flow_api.create_flow(
 ,p_rejoin_existing_sessions=>'N'
 ,p_csv_encoding=>'Y'
 ,p_last_updated_by=>'NATAHLIEBEAVERS@GMAIL.COM'
-,p_last_upd_yyyymmddhh24miss=>'20151124084201'
+,p_last_upd_yyyymmddhh24miss=>'20151124165412'
 ,p_file_prefix => nvl(wwv_flow_application_install.get_static_app_file_prefix,'')
 ,p_ui_type_name => null
 );
@@ -12849,7 +12849,7 @@ wwv_flow_api.create_page(
 ,p_cache_mode=>'NOCACHE'
 ,p_help_text=>'No help is available for this page.'
 ,p_last_updated_by=>'NATAHLIEBEAVERS@GMAIL.COM'
-,p_last_upd_yyyymmddhh24miss=>'20151124084201'
+,p_last_upd_yyyymmddhh24miss=>'20151124165412'
 );
 wwv_flow_api.create_page_plug(
  p_id=>wwv_flow_api.id(18338172139245156202)
@@ -13901,6 +13901,15 @@ wwv_flow_api.create_page_da_event(
 ''))
 );
 wwv_flow_api.create_page_da_action(
+ p_id=>wwv_flow_api.id(17910774399736263225)
+,p_event_id=>wwv_flow_api.id(18338176894548156249)
+,p_event_result=>'FALSE'
+,p_action_sequence=>10
+,p_execute_on_page_init=>'N'
+,p_action=>'NATIVE_ALERT'
+,p_attribute_01=>'Only the Executive Director can provide final approval.'
+);
+wwv_flow_api.create_page_da_action(
  p_id=>wwv_flow_api.id(18338176918932156250)
 ,p_event_id=>wwv_flow_api.id(18338176894548156249)
 ,p_event_result=>'TRUE'
@@ -13962,6 +13971,15 @@ wwv_flow_api.create_page_da_event(
 ''))
 );
 wwv_flow_api.create_page_da_action(
+ p_id=>wwv_flow_api.id(17910774460414263226)
+,p_event_id=>wwv_flow_api.id(18343216821505379102)
+,p_event_result=>'FALSE'
+,p_action_sequence=>10
+,p_execute_on_page_init=>'N'
+,p_action=>'NATIVE_ALERT'
+,p_attribute_01=>'Only Sys Admins, Lab Directors, Chairpersons, and Executive Directors may reject an RFE.'
+);
+wwv_flow_api.create_page_da_action(
  p_id=>wwv_flow_api.id(18343216940125379103)
 ,p_event_id=>wwv_flow_api.id(18343216821505379102)
 ,p_event_result=>'TRUE'
@@ -14008,10 +14026,6 @@ wwv_flow_api.create_page_da_event(
 ,p_triggering_button_id=>wwv_flow_api.id(18341880472091153769)
 ,p_bind_type=>'bind'
 ,p_bind_event_type=>'click'
-,p_display_when_type=>'SQL_EXPRESSION'
-,p_display_when_cond=>wwv_flow_utilities.join(wwv_flow_t_varchar2(
-':P71_EMPLOYEE_LOGGED_IN = (SELECT REQUESTOR_ID FROM F15F8_RFE_EXCEPT_REQ WHERE F15F8_RFE_EXCEPT_REQ.RFE_ID = :SELECT_RFE);',
-''))
 );
 wwv_flow_api.create_page_da_action(
  p_id=>wwv_flow_api.id(18343217231962379106)
@@ -14088,6 +14102,15 @@ wwv_flow_api.create_page_da_event(
 ''))
 );
 wwv_flow_api.create_page_da_action(
+ p_id=>wwv_flow_api.id(17910774554699263227)
+,p_event_id=>wwv_flow_api.id(18343218380713379117)
+,p_event_result=>'FALSE'
+,p_action_sequence=>10
+,p_execute_on_page_init=>'N'
+,p_action=>'NATIVE_ALERT'
+,p_attribute_01=>'Only Sys Admins, Lab Directors, Chairpersons and Executive Directors may return an RFE Request.'
+);
+wwv_flow_api.create_page_da_action(
  p_id=>wwv_flow_api.id(18343218403163379118)
 ,p_event_id=>wwv_flow_api.id(18343218380713379117)
 ,p_event_result=>'TRUE'
@@ -14139,6 +14162,15 @@ wwv_flow_api.create_page_da_event(
 ':P71_EMPLOYEE_LOGGED_IN = (SELECT REQUESTOR_ID FROM F15F8_RFE_EXCEPT_REQ WHERE F15F8_RFE_EXCEPT_REQ.RFE_ID = :SELECT_RFE);',
 '',
 ''))
+);
+wwv_flow_api.create_page_da_action(
+ p_id=>wwv_flow_api.id(17910774687214263228)
+,p_event_id=>wwv_flow_api.id(18343219151526379125)
+,p_event_result=>'FALSE'
+,p_action_sequence=>10
+,p_execute_on_page_init=>'N'
+,p_action=>'NATIVE_ALERT'
+,p_attribute_01=>'Only RFE Requestors may recall an RFE Request before it has reached Final Approval.'
 );
 wwv_flow_api.create_page_da_action(
  p_id=>wwv_flow_api.id(18343219231960379126)

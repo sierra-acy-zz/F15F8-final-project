@@ -1,0 +1,68 @@
+# Change the follow in oracle account id and password to your oracle account id and password. Also, change A0 to your group's number but don't use F15 because it will make some internal names be too long.
+conn = connectTo 'jdbc:oracle:thin:@sayonara.microlab.cs.utexas.edu:1521:orcl' 'C##cs347_nmb642' 'orcl_nmb642' 'rdf_mode' 'F15F8';
+
+Neo4j on conn "CREATE (:restaurant { RESTAURAUNT_ID : 1, NAME : 'LA TRAVIATTA', FOOD_TYPE : 'ITALIAN', ADDRESS : '123 A AVE', NUMBER_OF_SEATS : 37, TAKE_OUT : 1, SERVES_ALCOHOL : 1})"
+
+Neo4j on conn "CREATE (:restaurant { RESTAURAUNT_ID : 2, NAME : 'BIG BITE', FOOD_TYPE : 'AMERICAN', ADDRESS : '121 GUADALUPE', NUMBER_OF_SEATS : 25, TAKE_OUT : 1, SERVES_ALCOHOL : 0})"
+
+Neo4j on conn "CREATE (:restaurant { RESTAURAUNT_ID : 3, NAME : 'TEJIS', FOOD_TYPE : 'INDIAN', ADDRESS : '120 GUADALUPE', NUMBER_OF_SEATS : 20, TAKE_OUT : 1, SERVES_ALCOHOL : 0})"
+
+Neo4j on conn "CREATE (:restaurant { RESTAURAUNT_ID : 4, NAME : 'AUSTINS PIZZA', FOOD_TYPE : 'PIZZA', ADDRESS : '124 GUADALUPE', NUMBER_OF_SEATS : 37, TAKE_OUT : 1, SERVES_ALCOHOL : 1})"
+
+Neo4j on conn "CREATE (:restaurant { RESTAURAUNT_ID : 5, NAME : 'QDOBA', FOOD_TYPE : 'MEXICAN', ADDRESS : '122 GUADALUPE', NUMBER_OF_SEATS : 37, TAKE_OUT : 1, SERVES_ALCOHOL : 1})"
+
+Neo4j on conn "CREATE (:food { FOOD_ID : 1, NAME : 'PASTA', FOOD_TYPE : 'ITALIAN', VEGETARIAN_VEGAN : 0, FAT_CONTENT : 30, SUGAR_CONTENT : 10, CALORIES : 250, MEAL_SERVED : 'LUNCH'})"
+
+Neo4j on conn "CREATE (:food { FOOD_ID : 2, NAME : 'TACOS', FOOD_TYPE : 'MEXICAN', VEGETARIAN_VEGAN : 0, FAT_CONTENT : 40, SUGAR_CONTENT : 20, CALORIES : 400, MEAL_SERVED : 'BREAKFAST'})"
+
+Neo4j on conn "CREATE (:food { FOOD_ID : 3, NAME : 'CHOW MEIN', FOOD_TYPE : 'CHINESE', VEGETARIAN_VEGAN : 1, FAT_CONTENT : 35, SUGAR_CONTENT : 0, CALORIES : 300, MEAL_SERVED : 'DINNER'})"
+
+Neo4j on conn "CREATE (:food { FOOD_ID : 4, NAME : 'BURGER', FOOD_TYPE : 'FAST FOOD', VEGETARIAN_VEGAN : 0, FAT_CONTENT : 70, SUGAR_CONTENT : 30, CALORIES : 500, MEAL_SERVED : 'LUNCH'})"
+
+Neo4j on conn "CREATE (:food { FOOD_ID : 5, NAME : 'NACHOS', FOOD_TYPE : 'MEXICAN', VEGETARIAN_VEGAN : 1, FAT_CONTENT : 60, SUGAR_CONTENT : 25, CALORIES : 400, MEAL_SERVED : 'SNACK'})"
+
+Neo4j on conn "CREATE (:food { FOOD_ID : 6, NAME : 'CURRY', FOOD_TYPE : 'INDIAN', VEGETARIAN_VEGAN : 1, FAT_CONTENT : 45, SUGAR_CONTENT : 15, CALORIES : 300, MEAL_SERVED : 'DINNER'})"
+
+Neo4j on conn "CREATE (:food { FOOD_ID : 7, NAME : 'GRILLED CHEESE', FOOD_TYPE : 'AMERICAN', VEGETARIAN_VEGAN : 1, FAT_CONTENT : 45, SUGAR_CONTENT : 10, CALORIES : 200, MEAL_SERVED : 'SNACK'})"
+
+Neo4j on conn "CREATE (:food { FOOD_ID : 8, NAME : 'KIMCHI FRIES', FOOD_TYPE : 'ASIAN FUSION', VEGETARIAN_VEGAN : 1, FAT_CONTENT : 55, SUGAR_CONTENT : 35, CALORIES : 350, MEAL_SERVED : 'SNACK'})"
+
+Neo4j on conn "CREATE (:food { FOOD_ID : 9, NAME : 'CHICKEN', FOOD_TYPE : 'AMERICAN', VEGETARIAN_VEGAN : 0, FAT_CONTENT : 70, SUGAR_CONTENT : 25, CALORIES : 700, MEAL_SERVED : 'DINNER'})"
+
+Neo4j on conn "CREATE (:food { FOOD_ID : 10, NAME : 'RICE', FOOD_TYPE : 'CHINESE', VEGETARIAN_VEGAN : 1, FAT_CONTENT : 5, SUGAR_CONTENT : 0, CALORIES : 100, MEAL_SERVED : 'BREAKFAST'})"
+
+Neo4j on conn "MATCH (r:restaurant),(f:food) WHERE r.food_type= 'ITALIAN' AND f.food_type = 'ITALIAN' CREATE (r)<-[:restauraunts]-(f)"
+
+Neo4j on conn "MATCH (r:restaurant),(f:food) WHERE r.food_type= 'AMERICAN' AND f.food_type = 'AMERICAN' CREATE (r)<-[:restauraunts]-(f)"
+
+Neo4j on conn "MATCH (r:restaurant),(f:food) WHERE r.food_type= 'CHINESE' AND f.food_type = 'CHINESE' CREATE (r)<-[:restauraunts]-(f)"
+
+Neo4j on conn "MATCH (r:restaurant),(f:food) WHERE r.food_type= 'ASIAN_FUSION' AND f.food_type = 'ASIAN_FUSION' CREATE (r)<-[:restauraunts]-(f)"
+
+Neo4j on conn "MATCH (r:restaurant),(f:food) WHERE r.food_type= 'MEXICAN' AND f.food_type = 'MEXICAN' CREATE (r)<-[:restauraunts]-(f)"
+
+Neo4j on conn "MATCH (r:restaurant),(f:food) WHERE r.food_type= 'THAI' AND f.food_type = 'THAI' CREATE (r)<-[:restauraunts]-(f)"
+
+Neo4j on conn "MATCH (r:restaurant),(f:food) WHERE r.food_type= 'INDIAN' AND f.food_type = 'INDIAN' CREATE (r)<-[:restauraunts]-(f)"
+
+Neo4j on conn "MATCH (r:restaurant),(f:food) WHERE r.food_type= 'PIZZA' AND f.food_type = 'PIZZA' CREATE (r)<-[:restauraunts]-(f)"
+
+Neo4j on conn "MATCH (r:restaurant),(f:food) WHERE r.food_type= 'FAST_FOOD' AND f.food_type = 'FAST_FOOD' CREATE (r)<-[:restauraunts]-(f)"
+
+Neo4j on conn "MATCH (r:restaurant),(f:food) WHERE r.food_type= 'ITALIAN' AND f.food_type = 'ITALIAN' CREATE (r)-[:food]->(f)"
+
+Neo4j on conn "MATCH (r:restaurant),(f:food) WHERE r.food_type= 'AMERICAN' AND f.food_type = 'AMERICAN' CREATE (r)-[:food]->(f)"
+
+Neo4j on conn "MATCH (r:restaurant),(f:food) WHERE r.food_type= 'CHINESE' AND f.food_type = 'CHINESE' CREATE (r)-[:food]->(f)"
+
+Neo4j on conn "MATCH (r:restaurant),(f:food) WHERE r.food_type= 'ASIAN_FUSION' AND f.food_type = 'ASIAN_FUSION' CREATE (r)<-[:food]->(f)"
+
+Neo4j on conn "MATCH (r:restaurant),(f:food) WHERE r.food_type= 'MEXICAN' AND f.food_type = 'MEXICAN' CREATE (r)-[:food]->(f)"
+
+Neo4j on conn "MATCH (r:restaurant),(f:food) WHERE r.food_type= 'THAI' AND f.food_type = 'THAI' CREATE (r)-[:food]->(f)"
+
+Neo4j on conn "MATCH (r:restaurant),(f:food) WHERE r.food_type= 'INDIAN' AND f.food_type = 'INDIAN' CREATE (r)-[:food]->(f)"
+
+Neo4j on conn "MATCH (r:restaurant),(f:food) WHERE r.food_type= 'PIZZA' AND f.food_type = 'PIZZA' CREATE (r)-[:food]->(f)"
+
+Neo4j on conn "MATCH (r:restaurant),(f:food) WHERE r.food_type= 'FAST_FOOD' AND f.food_type = 'FAST_FOOD' CREATE (r)-[:food]->(f)"

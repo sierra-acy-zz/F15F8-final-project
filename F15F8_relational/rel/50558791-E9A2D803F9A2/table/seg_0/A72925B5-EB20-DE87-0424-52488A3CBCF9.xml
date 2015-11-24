@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A72925B5-EB20-DE87-0424-52488A3CBCF9" name="F15F8_Role_Codes">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:51:42 UTC</createdTime>
+<generatorID>41C7A254-4A45-DD66-AF64-30CBE8CF95CF</generatorID>
+<ownerDesignName>F15F8_relational</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="role_code_id" id="F05B86EF-1F61-9957-43A9-D069365C6340">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:51:42 UTC</createdTime>
+<generatorID>2EB851C5-32CF-45BD-074E-B5E98324CEA7</generatorID>
+<ownerDesignName>F15F8_relational</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="role_code_num" id="4DAA4A81-9E0D-FF4E-16C8-D2B1DD3E028B">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:51:42 UTC</createdTime>
+<generatorID>1FB8F867-11E2-32A9-E9CC-0EE5353CCA55</generatorID>
+<ownerDesignName>F15F8_relational</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="role_code_name" id="446D5ED0-8652-0962-C6C8-A6DC1533F188">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:51:42 UTC</createdTime>
+<generatorID>5513D964-C30E-2818-D235-315C2484E44B</generatorID>
+<ownerDesignName>F15F8_relational</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="role_code_desc" id="CD9E9F2B-FA9E-46D9-CBCD-E8A9065061F2">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:51:42 UTC</createdTime>
+<generatorID>23C73A1F-F440-0F4E-067D-4E9928DDABA0</generatorID>
+<ownerDesignName>F15F8_relational</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FEA66390-7A81-B9F3-B22D-60CD7D7E3DB7" name="F15F8_Role_Codes_PK">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:51:42 UTC</createdTime>
+<generatorID>8DB3DC08-FDBE-BA0C-DEF7-30BA8B19DD07</generatorID>
+<ownerDesignName>F15F8_relational</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F05B86EF-1F61-9957-43A9-D069365C6340"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

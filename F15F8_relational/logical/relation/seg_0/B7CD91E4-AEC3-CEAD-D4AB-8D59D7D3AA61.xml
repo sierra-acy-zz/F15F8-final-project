@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="F15F8_RFE_Except_Req_F15F8_RFE_Status_Codes_FK" directorySegmentName="seg_0" id="B7CD91E4-AEC3-CEAD-D4AB-8D59D7D3AA61">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 01:20:36 UTC</createdTime>
+<generatorID>9F30FE78-A039-5EB4-034F-FCFE0984CF35</generatorID>
+<ownerDesignName>F15F8_relational</ownerDesignName>
+<engineerTo>
+<item key="50558791-FE98-BB86-712F-E9A2D803F9A2" value="true"/>
+</engineerTo>
+<sourcePk>F72D9629-1A5D-8634-728C-75195BB34F7F</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>BC02D45D-AFCC-3A6F-0FC3-F03720866EF7</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>B172F81C-57C4-25AE-CD89-F50208777728</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FA4A7796-902B-EEB7-CA6D-2A92228C58B8" name="F15F8_RFE_Status_Codes">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:51:42 UTC</createdTime>
+<generatorID>B4E83EBB-B645-48D1-F9FD-2AED5AEC0166</generatorID>
+<ownerDesignName>F15F8_relational</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="status_code_id" id="1997278C-748F-C763-9559-9F5A1CDFD6D3">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:51:42 UTC</createdTime>
+<generatorID>64F2C774-29A3-7BEB-9294-5B5AC86036A6</generatorID>
+<ownerDesignName>F15F8_relational</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rfe_status" id="FF427316-1DCB-A6DC-D056-15ACA0C47C4B">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:51:42 UTC</createdTime>
+<generatorID>A15A7A27-6595-72A7-A903-8BF26F86E8E5</generatorID>
+<ownerDesignName>F15F8_relational</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="description" id="16E7475E-BC05-891E-DBB5-FDB53AB5B499">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:51:42 UTC</createdTime>
+<generatorID>DA56D2E6-518F-F01E-FBE7-62BDADB23850</generatorID>
+<ownerDesignName>F15F8_relational</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5DA267E4-9E9E-F4A0-BFB0-F6D2F4BCCD54" name="F15F8_RFE_Status_Codes_PK">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:51:42 UTC</createdTime>
+<generatorID>78ED312F-C449-D726-C427-979DC97AB715</generatorID>
+<ownerDesignName>F15F8_relational</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1997278C-748F-C763-9559-9F5A1CDFD6D3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

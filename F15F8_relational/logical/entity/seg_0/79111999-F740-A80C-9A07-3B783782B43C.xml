@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="79111999-F740-A80C-9A07-3B783782B43C" name="F15F8_Comment">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 01:20:36 UTC</createdTime>
+<generatorID>EC096C14-5C4B-DD2F-1529-8483538A58DB</generatorID>
+<ownerDesignName>F15F8_relational</ownerDesignName>
+<engineerTo>
+<item key="50558791-FE98-BB86-712F-E9A2D803F9A2" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="comment_id" id="58ADCC08-8EDA-60A2-8A37-71472E52D66A">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 01:20:36 UTC</createdTime>
+<generatorID>B699E121-83CE-C2C2-1454-D12777BBEB55</generatorID>
+<ownerDesignName>F15F8_relational</ownerDesignName>
+<engineerTo>
+<item key="50558791-FE98-BB86-712F-E9A2D803F9A2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="entered_by_id" id="0DAE1A7B-8C32-47C1-EB2D-D7F219ACFA90">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 01:20:36 UTC</createdTime>
+<generatorID>1CB17920-8D4F-20DA-2152-C5B773B2B7AC</generatorID>
+<ownerDesignName>F15F8_relational</ownerDesignName>
+<engineerTo>
+<item key="50558791-FE98-BB86-712F-E9A2D803F9A2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="entry_date" id="9E51E448-7151-B225-DCC4-FAA0A4341637">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 01:20:36 UTC</createdTime>
+<generatorID>45C8F052-CD6C-7F22-70E5-4BE8FBD611B6</generatorID>
+<ownerDesignName>F15F8_relational</ownerDesignName>
+<engineerTo>
+<item key="50558791-FE98-BB86-712F-E9A2D803F9A2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="&quot;comment&quot;" id="C59739EB-728E-05F1-FE68-71EEBB976525">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 01:20:36 UTC</createdTime>
+<generatorID>FC6E4AFC-E83F-6D54-8786-B8A83B16A5B5</generatorID>
+<ownerDesignName>F15F8_relational</ownerDesignName>
+<engineerTo>
+<item key="50558791-FE98-BB86-712F-E9A2D803F9A2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="F15F8_RFE_Except_Req_rfe_id" id="19B20808-8CFD-E0BE-75C1-6206CE00DB70">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 01:20:36 UTC</createdTime>
+<generatorID>C23AA003-DF31-A7E5-B127-8D83A0B5D5B9</generatorID>
+<ownerDesignName>F15F8_relational</ownerDesignName>
+<engineerTo>
+<item key="50558791-FE98-BB86-712F-E9A2D803F9A2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>D4433C75-6FD1-D1DD-5A45-ACF7B2FC1641</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A0482446-1CB5-0E73-78E9-7F38B712B1C1" name="F15F8_Comment_PK">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 01:20:36 UTC</createdTime>
+<generatorID>36180D9C-FF18-5A98-86D5-2F342F15270B</generatorID>
+<ownerDesignName>F15F8_relational</ownerDesignName>
+<engineerTo>
+<item key="50558791-FE98-BB86-712F-E9A2D803F9A2" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>58ADCC08-8EDA-60A2-8A37-71472E52D66A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

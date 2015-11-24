@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1EF394B1-001F-A6E6-ECA5-07381D2404EE" name="R11">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:51:42 UTC</createdTime>
+<ownerDesignName>F15F8_relational</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="F15F8_RFE_Except_Req_rfe_id" id="5DEAB520-C525-24D6-EACD-23601B7C33C8">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:51:42 UTC</createdTime>
+<ownerDesignName>F15F8_relational</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C0014A49-FACD-47C8-3747-312E3EAFFAF6" referredColumn="E59F80BD-3E6F-4C50-72B0-D2D330D8E1FF"/>
+</associations>
+</Column>
+<Column name="F15F8_Task_task_id" id="13323A19-545B-EBB1-0E86-D3DC4CCA63EC">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:51:42 UTC</createdTime>
+<ownerDesignName>F15F8_relational</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="19BCC756-FF90-4AC5-5F78-D1CAB3B56D32" referredColumn="36B4CD53-16FB-CCE3-D0F2-262C3A435DB5"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="90743085-8DED-0DA3-21F2-46474E1EE826" name="FK_ASS_7">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:51:42 UTC</createdTime>
+<generatorID>649FB5C0-2857-44F6-C78C-58C361FA1AAA</generatorID>
+<ownerDesignName>F15F8_relational</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5DEAB520-C525-24D6-EACD-23601B7C33C8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="691268FD-BFA6-26C8-F708-61EEE90D4065" name="FK_ASS_8">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:51:42 UTC</createdTime>
+<generatorID>649FB5C0-2857-44F6-C78C-58C361FA1AAA</generatorID>
+<ownerDesignName>F15F8_relational</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="13323A19-545B-EBB1-0E86-D3DC4CCA63EC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,35 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.logical.LogicalDesign>
+   <object objectType="Entity" objectID="7E1EEC37-257B-3C71-86DE-3D702A9DBC97" name="F15F8_Auth" seqName="seg_0"/>
+   <object objectType="Entity" objectID="79111999-F740-A80C-9A07-3B783782B43C" name="F15F8_Comment" seqName="seg_0"/>
+   <object objectType="Entity" objectID="8AF727A3-955C-807F-0220-4276779B419A" name="F15F8_Contacts" seqName="seg_0"/>
+   <object objectType="Entity" objectID="178EC290-E725-B3F2-E7BF-3F371B0B57B0" name="F15F8_Document" seqName="seg_0"/>
+   <object objectType="Entity" objectID="89D66F63-B36F-3AA1-42F5-EB556283B027" name="F15F8_Employee" seqName="seg_0"/>
+   <object objectType="Entity" objectID="3DDD0403-C066-EB26-B362-FA2A47988BDC" name="F15F8_History" seqName="seg_0"/>
+   <object objectType="Entity" objectID="05716F56-8990-9620-AB78-ED81AB4C366B" name="F15F8_Lab" seqName="seg_0"/>
+   <object objectType="Entity" objectID="B172F81C-57C4-25AE-CD89-F50208777728" name="F15F8_RFE_Except_Req" seqName="seg_0"/>
+   <object objectType="Entity" objectID="BC02D45D-AFCC-3A6F-0FC3-F03720866EF7" name="F15F8_RFE_Status_Codes" seqName="seg_0"/>
+   <object objectType="Entity" objectID="A17E9C19-0634-53FD-20AD-B83DBB529CD9" name="F15F8_Role_Codes" seqName="seg_0"/>
+   <object objectType="Entity" objectID="CC9C9171-2950-2104-05E8-9E8846444EF8" name="F15F8_Status" seqName="seg_0"/>
+   <object objectType="Entity" objectID="16597644-47C5-0102-AE4F-BA01B06E6A82" name="F15F8_Task" seqName="seg_0"/>
+   <object objectType="Entity" objectID="90CB1F8D-8625-B201-A855-23FE6E5FA1E6" name="R11" seqName="seg_0"/>
+   <object objectType="Entity" objectID="EB3534A8-75DD-78B5-33FD-F50644171F06" name="R5" seqName="seg_0"/>
+   <object objectType="Entity" objectID="B42022B8-4222-4357-5006-81C0B079DCCE" name="R6" seqName="seg_0"/>
+   <object objectType="Relation" objectID="B0C72C5F-0F2B-9F46-1438-437CDE0D74F7" name="F15F8_Auth_F15F8_Employee_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="C23AA003-DF31-A7E5-B127-8D83A0B5D5B9" name="F15F8_Comment_F15F8_RFE_Except_Req_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="E14CBF5B-49D5-8AB7-4C56-238EB6CB627F" name="F15F8_Contacts_F15F8_Employee_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="7D05BE4B-C825-5D43-D361-AB45D0B44A21" name="F15F8_Contacts_F15F8_Role_Codes_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="247E10E7-A62C-B93F-98BF-4D2162BF52B6" name="F15F8_Document_F15F8_RFE_Except_Req_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="14E81999-707B-4E25-C32D-305E8F16CAD3" name="F15F8_Employee_F15F8_Lab_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="F2BF8374-574C-28C6-C5A6-946CE00E56F8" name="F15F8_History_F15F8_RFE_Except_Req_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="BB10E2EF-17D7-F1F6-89BD-F44D94E64C62" name="F15F8_RFE_Except_Req_F15F8_Employee_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="B7CD91E4-AEC3-CEAD-D4AB-8D59D7D3AA61" name="F15F8_RFE_Except_Req_F15F8_RFE_Status_Codes_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="23D82A36-61F3-41CB-487C-0E5D3EE61CA4" name="F15F8_RFE_Except_Req_F15F8_Status_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="B7C0E80F-0179-5E69-29CB-0B6DB018472B" name="F15F8_Status_F15F8_RFE_Status_Codes_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="ED332A7A-91C1-2AB5-4548-6E3B252C3D01" name="FK_ASS_15" seqName="seg_0"/>
+   <object objectType="Relation" objectID="D1A1883E-7BFE-6A69-D617-AF237D5371A6" name="FK_ASS_16" seqName="seg_0"/>
+   <object objectType="Relation" objectID="3CCD2BC9-01A7-DCD3-BA28-A9798BD294AE" name="FK_ASS_17" seqName="seg_0"/>
+   <object objectType="Relation" objectID="9BA05BB7-F080-6477-E82E-DFBDBF6B1A0D" name="FK_ASS_18" seqName="seg_0"/>
+   <object objectType="Relation" objectID="8FB957C9-020D-7072-672A-2F4E619BDFED" name="FK_ASS_7" seqName="seg_0"/>
+   <object objectType="Relation" objectID="04E954A3-EBFA-6FA7-0747-FADC22E36CB8" name="FK_ASS_8" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.logical.LogicalDesign>

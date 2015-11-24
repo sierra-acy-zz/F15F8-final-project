@@ -1,0 +1,35 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="Table" objectID="AF2EFC6D-079E-502E-E3D9-7F2248488FD4" name="F15F8_Auth" seqName="seg_0"/>
+   <object objectType="Table" objectID="EC096C14-5C4B-DD2F-1529-8483538A58DB" name="F15F8_Comment" seqName="seg_0"/>
+   <object objectType="Table" objectID="3C67CB94-EA9F-12C9-B47E-15B4C94B13FC" name="F15F8_Contacts" seqName="seg_0"/>
+   <object objectType="Table" objectID="0EE1D567-ED49-E64E-A8C3-905CDF72E171" name="F15F8_Document" seqName="seg_0"/>
+   <object objectType="Table" objectID="FDCF8FF2-2064-9230-F057-F0D1A3099A84" name="F15F8_Employee" seqName="seg_0"/>
+   <object objectType="Table" objectID="CAEB3C36-87A8-7E6C-DFEF-28C07EF8CC16" name="F15F8_History" seqName="seg_0"/>
+   <object objectType="Table" objectID="560F01FA-0DCE-5516-0F6E-3B1227195AA2" name="F15F8_Lab" seqName="seg_0"/>
+   <object objectType="Table" objectID="E0EDD245-5E8D-661B-ACFA-A0496BC33CF6" name="F15F8_RFE_Except_Req" seqName="seg_0"/>
+   <object objectType="Table" objectID="FA4A7796-902B-EEB7-CA6D-2A92228C58B8" name="F15F8_RFE_Status_Codes" seqName="seg_0"/>
+   <object objectType="Table" objectID="A72925B5-EB20-DE87-0424-52488A3CBCF9" name="F15F8_Role_Codes" seqName="seg_0"/>
+   <object objectType="Table" objectID="9AA19D1E-1D6B-D004-23D0-BA877D65FD49" name="F15F8_Status" seqName="seg_0"/>
+   <object objectType="Table" objectID="48BD5CB8-6C51-DD6D-0ECC-97770F3196A5" name="F15F8_Task" seqName="seg_0"/>
+   <object objectType="Table" objectID="1EF394B1-001F-A6E6-ECA5-07381D2404EE" name="R11" seqName="seg_0"/>
+   <object objectType="Table" objectID="9555B2C5-0C10-15FF-2FAA-13BA356B7D76" name="R5" seqName="seg_0"/>
+   <object objectType="Table" objectID="12D4E287-46E7-034D-396B-8F7550AE8653" name="R6" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="E477A625-8684-C441-9B49-787623AAC4D6" name="F15F8_Auth_F15F8_Employee_FK" seqName="seg_0" containerID="AF2EFC6D-079E-502E-E3D9-7F2248488FD4" refContainerID="FDCF8FF2-2064-9230-F057-F0D1A3099A84"/>
+   <object objectType="FKIndexAssociation" objectID="F0AA4464-EC24-C3E4-536E-3A679583CDB4" name="F15F8_Comment_F15F8_RFE_Except_Req_FK" seqName="seg_0" containerID="EC096C14-5C4B-DD2F-1529-8483538A58DB" refContainerID="E0EDD245-5E8D-661B-ACFA-A0496BC33CF6"/>
+   <object objectType="FKIndexAssociation" objectID="537C276E-EE0F-757C-9E1F-7C43E0844842" name="F15F8_Contacts_F15F8_Employee_FK" seqName="seg_0" containerID="3C67CB94-EA9F-12C9-B47E-15B4C94B13FC" refContainerID="FDCF8FF2-2064-9230-F057-F0D1A3099A84"/>
+   <object objectType="FKIndexAssociation" objectID="AA47F639-BBFE-9C76-6BC9-92766CB51874" name="F15F8_Contacts_F15F8_Role_Codes_FK" seqName="seg_0" containerID="3C67CB94-EA9F-12C9-B47E-15B4C94B13FC" refContainerID="A72925B5-EB20-DE87-0424-52488A3CBCF9"/>
+   <object objectType="FKIndexAssociation" objectID="6E2F2DC3-A963-2B6F-0462-FF1007B46CE7" name="F15F8_Document_F15F8_RFE_Except_Req_FK" seqName="seg_0" containerID="0EE1D567-ED49-E64E-A8C3-905CDF72E171" refContainerID="E0EDD245-5E8D-661B-ACFA-A0496BC33CF6"/>
+   <object objectType="FKIndexAssociation" objectID="A04EF4AB-B25D-1485-3BDD-9B8123EBD342" name="F15F8_Employee_F15F8_Lab_FK" seqName="seg_0" containerID="FDCF8FF2-2064-9230-F057-F0D1A3099A84" refContainerID="560F01FA-0DCE-5516-0F6E-3B1227195AA2"/>
+   <object objectType="FKIndexAssociation" objectID="DE60E78E-1B82-5E88-64A3-BE65F325D2B2" name="F15F8_History_F15F8_RFE_Except_Req_FK" seqName="seg_0" containerID="CAEB3C36-87A8-7E6C-DFEF-28C07EF8CC16" refContainerID="E0EDD245-5E8D-661B-ACFA-A0496BC33CF6"/>
+   <object objectType="FKIndexAssociation" objectID="EF6EAECC-4E04-1185-96E8-1AC41C474C46" name="F15F8_RFE_Except_Req_F15F8_Employee_FK" seqName="seg_0" containerID="E0EDD245-5E8D-661B-ACFA-A0496BC33CF6" refContainerID="FDCF8FF2-2064-9230-F057-F0D1A3099A84"/>
+   <object objectType="FKIndexAssociation" objectID="9F30FE78-A039-5EB4-034F-FCFE0984CF35" name="F15F8_RFE_Except_Req_F15F8_RFE_Status_Codes_FK" seqName="seg_0" containerID="E0EDD245-5E8D-661B-ACFA-A0496BC33CF6" refContainerID="FA4A7796-902B-EEB7-CA6D-2A92228C58B8"/>
+   <object objectType="FKIndexAssociation" objectID="B37AF73C-BA94-C94F-952D-5026849845B9" name="F15F8_RFE_Except_Req_F15F8_Status_FK" seqName="seg_0" containerID="E0EDD245-5E8D-661B-ACFA-A0496BC33CF6" refContainerID="9AA19D1E-1D6B-D004-23D0-BA877D65FD49"/>
+   <object objectType="FKIndexAssociation" objectID="26120288-B76D-8807-C55F-C13AF90E537F" name="F15F8_Status_F15F8_RFE_Status_Codes_FK" seqName="seg_0" containerID="9AA19D1E-1D6B-D004-23D0-BA877D65FD49" refContainerID="FA4A7796-902B-EEB7-CA6D-2A92228C58B8"/>
+   <object objectType="FKIndexAssociation" objectID="A40BFAC4-1B83-4AC5-235B-50C7C39B8FAF" name="FK_ASS_15" seqName="seg_0" containerID="9555B2C5-0C10-15FF-2FAA-13BA356B7D76" refContainerID="FDCF8FF2-2064-9230-F057-F0D1A3099A84"/>
+   <object objectType="FKIndexAssociation" objectID="0ACC0D0B-F929-A319-4CE0-9A8D346611D2" name="FK_ASS_16" seqName="seg_0" containerID="9555B2C5-0C10-15FF-2FAA-13BA356B7D76" refContainerID="E0EDD245-5E8D-661B-ACFA-A0496BC33CF6"/>
+   <object objectType="FKIndexAssociation" objectID="7FA9279A-F9B6-EB8F-CDBE-7483CDE8F5E7" name="FK_ASS_17" seqName="seg_0" containerID="12D4E287-46E7-034D-396B-8F7550AE8653" refContainerID="FDCF8FF2-2064-9230-F057-F0D1A3099A84"/>
+   <object objectType="FKIndexAssociation" objectID="F69A257C-798F-FCC0-47D6-85C055525B80" name="FK_ASS_18" seqName="seg_0" containerID="12D4E287-46E7-034D-396B-8F7550AE8653" refContainerID="E0EDD245-5E8D-661B-ACFA-A0496BC33CF6"/>
+   <object objectType="FKIndexAssociation" objectID="C0014A49-FACD-47C8-3747-312E3EAFFAF6" name="FK_ASS_7" seqName="seg_0" containerID="1EF394B1-001F-A6E6-ECA5-07381D2404EE" refContainerID="E0EDD245-5E8D-661B-ACFA-A0496BC33CF6"/>
+   <object objectType="FKIndexAssociation" objectID="19BCC756-FF90-4AC5-5F78-D1CAB3B56D32" name="FK_ASS_8" seqName="seg_0" containerID="1EF394B1-001F-A6E6-ECA5-07381D2404EE" refContainerID="48BD5CB8-6C51-DD6D-0ECC-97770F3196A5"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

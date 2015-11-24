@@ -1,0 +1,225 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E0EDD245-5E8D-661B-ACFA-A0496BC33CF6" name="F15F8_RFE_Except_Req">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:51:42 UTC</createdTime>
+<generatorID>7D0BF633-14F8-32A9-D80F-01DCF9645100</generatorID>
+<ownerDesignName>F15F8_logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="rfe_id" id="E59F80BD-3E6F-4C50-72B0-D2D330D8E1FF">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:51:42 UTC</createdTime>
+<generatorID>059147FA-206C-C2E3-2EF3-EA4E3F3CE810</generatorID>
+<ownerDesignName>F15F8_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="explanation" id="3D1CE604-4C76-710E-2550-B5AF7DDB2092">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:51:42 UTC</createdTime>
+<generatorID>F21EAD64-B85E-DBDA-AC38-53A9C822FA8D</generatorID>
+<ownerDesignName>F15F8_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="alt_protections" id="4365E1CA-0AC3-4251-1560-452E3D022838">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:51:42 UTC</createdTime>
+<generatorID>36291EF1-9E69-8642-B6C7-AC8E244CB328</generatorID>
+<ownerDesignName>F15F8_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="review_date" id="9E34476F-8A6F-26CA-F19F-30D09F4BE649">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:51:42 UTC</createdTime>
+<generatorID>EBAE7439-B1E1-2C03-1ECF-8F503A715430</generatorID>
+<ownerDesignName>F15F8_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="requestor_id" id="519299DA-93D1-8E32-1BFE-26B1C8A703CB">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:51:42 UTC</createdTime>
+<generatorID>3D4ACA94-51E4-5C5C-6659-0B3561B6837A</generatorID>
+<ownerDesignName>F15F8_logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="reviewer_id" id="8B92B0DA-6FA0-40E0-EC55-A05FEE829048">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:51:42 UTC</createdTime>
+<generatorID>7A0EE26A-1348-71B2-B6A0-7D9496A6B71D</generatorID>
+<ownerDesignName>F15F8_logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sa_approver_id" id="F76BBACF-D773-3530-FEB3-2428F099B04D">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:51:42 UTC</createdTime>
+<generatorID>D7447D35-5275-C291-5059-6C49143C204E</generatorID>
+<ownerDesignName>F15F8_logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ld_approver_id" id="5E6E1F12-8249-9E48-DCDB-866567AE402A">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:51:42 UTC</createdTime>
+<generatorID>56C10568-4E67-7920-DE49-CF578D49E128</generatorID>
+<ownerDesignName>F15F8_logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cp_approver_id" id="13152EDF-5309-2AB4-D3E9-C37E58E7B0F6">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:51:42 UTC</createdTime>
+<generatorID>219640E4-5081-BA9C-AC40-7225A145E336</generatorID>
+<ownerDesignName>F15F8_logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ed_approver_id" id="005C2F3A-8CCD-3A8E-369E-766FBEB066D0">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:51:42 UTC</createdTime>
+<generatorID>F2880F6C-D329-E537-0689-6C17E1662BA4</generatorID>
+<ownerDesignName>F15F8_logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="F15F8_Employee_emp_id" id="073EB507-FB20-5FDE-8498-6E3845A86206">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:51:42 UTC</createdTime>
+<generatorID>5BB8F7E9-8D5C-9F65-63AB-801F9841C2AA</generatorID>
+<ownerDesignName>F15F8_logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EF6EAECC-4E04-1185-96E8-1AC41C474C46" referredColumn="A515DE75-7D8F-B852-6C99-34EB4A84FA94"/>
+</associations>
+</Column>
+<Column name="F15F8_RFE_Status_Codes_status_code_id" id="BAB9A379-4C6F-B6E9-3F51-89A150E0592A">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:51:42 UTC</createdTime>
+<generatorID>E6C782BC-FF22-E7CD-3704-35596005A177</generatorID>
+<ownerDesignName>F15F8_logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9F30FE78-A039-5EB4-034F-FCFE0984CF35" referredColumn="1997278C-748F-C763-9559-9F5A1CDFD6D3"/>
+</associations>
+</Column>
+<Column name="F15F8_Status_status_id" id="3D4DCFD7-D4CD-C544-531C-CB8ADA069215">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:51:42 UTC</createdTime>
+<generatorID>8530D642-1267-52B9-DD5B-688695A2B140</generatorID>
+<ownerDesignName>F15F8_logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B37AF73C-BA94-C94F-952D-5026849845B9" referredColumn="67490D94-4899-1FAE-1001-7B32AD032843"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A59BDC9E-2B10-D596-BD1D-174F9053DF89" name="F15F8_RFE_Except_Req_PK">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:51:42 UTC</createdTime>
+<generatorID>50D29A51-2E4C-8C62-3FAC-F103123E70D2</generatorID>
+<ownerDesignName>F15F8_logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E59F80BD-3E6F-4C50-72B0-D2D330D8E1FF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9AC930B0-3B73-136C-5700-A3E3F8714743" name="F15F8_RFE_Except_Req_F15F8_RFE_Status_Codes_FK">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:51:42 UTC</createdTime>
+<generatorID>88FB574A-47A0-D9DD-CEC2-F3BB83FCE526</generatorID>
+<ownerDesignName>F15F8_logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BAB9A379-4C6F-B6E9-3F51-89A150E0592A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2656952F-78A3-9153-5E5B-DD7CA168B756" name="F15F8_RFE_Except_Req_F15F8_Status_FK">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:51:42 UTC</createdTime>
+<generatorID>86497A70-F4DC-811F-CCDC-8ECEA7DC79D5</generatorID>
+<ownerDesignName>F15F8_logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3D4DCFD7-D4CD-C544-531C-CB8ADA069215"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1EDB0693-8959-7218-0C9F-6E982534D77D" name="F15F8_RFE_Except_Req_F15F8_Employee_FK">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:51:42 UTC</createdTime>
+<generatorID>184B0D08-BED1-1897-FE75-EDC349B24AFF</generatorID>
+<ownerDesignName>F15F8_logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="073EB507-FB20-5FDE-8498-6E3845A86206"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

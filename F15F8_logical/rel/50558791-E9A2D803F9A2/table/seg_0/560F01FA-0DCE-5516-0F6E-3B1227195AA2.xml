@@ -1,0 +1,37 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="560F01FA-0DCE-5516-0F6E-3B1227195AA2" name="F15F8_Lab">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:51:42 UTC</createdTime>
+<generatorID>335DDC1A-4A58-D2DE-DFCE-56C86C17D323</generatorID>
+<ownerDesignName>F15F8_logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="lab_id" id="D4791254-F04E-B1BC-37CF-12E0A8FB220C">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:51:42 UTC</createdTime>
+<generatorID>B9D18672-0547-B31E-6CFC-B2232521AF58</generatorID>
+<ownerDesignName>F15F8_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3619673C-A722-D696-2F05-C9EF471AEB6C" name="F15F8_Lab_PK">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:51:42 UTC</createdTime>
+<generatorID>E435FF2B-E96E-78EB-8E47-ACD1F562E84A</generatorID>
+<ownerDesignName>F15F8_logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D4791254-F04E-B1BC-37CF-12E0A8FB220C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

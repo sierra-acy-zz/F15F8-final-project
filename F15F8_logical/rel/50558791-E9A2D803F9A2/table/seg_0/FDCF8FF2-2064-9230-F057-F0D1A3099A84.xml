@@ -1,0 +1,183 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FDCF8FF2-2064-9230-F057-F0D1A3099A84" name="F15F8_Employee">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:51:42 UTC</createdTime>
+<generatorID>EFA29193-4063-3B33-2D5D-6535B523B7A6</generatorID>
+<ownerDesignName>F15F8_logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="emp_id" id="A515DE75-7D8F-B852-6C99-34EB4A84FA94">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:51:42 UTC</createdTime>
+<generatorID>6ED29CF5-8D02-7083-CCB6-ECE511A499F4</generatorID>
+<ownerDesignName>F15F8_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="emp_name" id="8105F34B-F043-2402-8B37-AC0FFD1BB30C">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:51:42 UTC</createdTime>
+<generatorID>DF7C23B1-1034-6AB6-136F-1440F8677B55</generatorID>
+<ownerDesignName>F15F8_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="emp_email" id="C0BADB96-2E5D-1272-0F03-042BE9D01661">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:51:42 UTC</createdTime>
+<generatorID>FC71AB98-B34E-7FFC-A0C8-AAAE9287F547</generatorID>
+<ownerDesignName>F15F8_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="emp_office" id="F8F0D877-96C3-CA88-2549-7400294288E3">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:51:42 UTC</createdTime>
+<generatorID>7A00EC0E-577C-9B79-653B-1D0C0E902D25</generatorID>
+<ownerDesignName>F15F8_logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>12,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="emp_phone" id="2B320C5A-A0B6-75FD-F5EC-9D78CC7E9275">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:51:42 UTC</createdTime>
+<generatorID>7D03D928-D269-9F6F-A2B5-F10862360752</generatorID>
+<ownerDesignName>F15F8_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="emp_Status" id="636B98E8-2B2D-4D10-D798-783F1CE72D41">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:51:42 UTC</createdTime>
+<generatorID>8E1C554F-E704-8762-E7E0-E1A8C871EFDD</generatorID>
+<ownerDesignName>F15F8_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="emp_status_date" id="C451D5E0-A46B-6172-220A-5D39FD6DF191">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:51:42 UTC</createdTime>
+<generatorID>2644BDDF-6EFF-F853-EBA6-A1FFFE0BDC8B</generatorID>
+<ownerDesignName>F15F8_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="emp_admin_flag" id="BCD80518-A4FB-870C-53F0-4E760E34BC1B">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:51:42 UTC</createdTime>
+<generatorID>C336569D-EBD9-26E0-A478-31CB7C2CABD5</generatorID>
+<ownerDesignName>F15F8_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="emp_labdir_flag" id="8B85918E-E6E8-6701-2352-6BB299257353">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:51:42 UTC</createdTime>
+<generatorID>C2F0A59F-BE23-0A90-D58A-28F637D65A46</generatorID>
+<ownerDesignName>F15F8_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="emp_chair_flag" id="2F76033F-3F9F-616D-FA9D-EDBBF87F3ADE">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:51:42 UTC</createdTime>
+<generatorID>E8D4727C-33B0-325B-2A28-568272975627</generatorID>
+<ownerDesignName>F15F8_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="emp_execdir_flag" id="25382523-3C80-395A-073A-4769E89449DD">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:51:42 UTC</createdTime>
+<generatorID>9F030467-4BB3-EEAE-CFB2-F0DF293AF202</generatorID>
+<ownerDesignName>F15F8_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="F15F8_Lab_lab_id" id="FFD00FBA-98E8-EDBF-3F53-B7E9D0410007">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:51:42 UTC</createdTime>
+<generatorID>498A0FCD-78E7-67BC-B68C-FDABA0F8815A</generatorID>
+<ownerDesignName>F15F8_logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A04EF4AB-B25D-1485-3BDD-9B8123EBD342" referredColumn="D4791254-F04E-B1BC-37CF-12E0A8FB220C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8E1E3F73-6F22-6C41-8F83-A85739E3D06C" name="F15F8_Employee_PK">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:51:42 UTC</createdTime>
+<generatorID>16D34D68-2CCE-A5A8-03CC-4E491E23E05A</generatorID>
+<ownerDesignName>F15F8_logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A515DE75-7D8F-B852-6C99-34EB4A84FA94"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6DF303D1-B39A-CB72-BE6C-F20F38C8229D" name="F15F8_Employee_F15F8_Lab_FK">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:53:25 UTC</createdTime>
+<generatorID>6E5D04B3-72D9-31C4-91C9-4CEC922E47D2</generatorID>
+<ownerDesignName>F15F8_logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FFD00FBA-98E8-EDBF-3F53-B7E9D0410007"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

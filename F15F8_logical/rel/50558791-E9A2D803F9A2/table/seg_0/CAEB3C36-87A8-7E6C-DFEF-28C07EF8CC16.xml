@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CAEB3C36-87A8-7E6C-DFEF-28C07EF8CC16" name="F15F8_History">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:51:42 UTC</createdTime>
+<generatorID>7D03E5D5-0BD6-F2FE-F79C-053C0086CEF2</generatorID>
+<ownerDesignName>F15F8_logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="hist_id" id="269FC99F-1863-4609-D797-A2757121F366">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:51:42 UTC</createdTime>
+<generatorID>8C764855-884F-61B5-916E-C7A86C151963</generatorID>
+<ownerDesignName>F15F8_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status_code" id="22B10411-DB27-A460-0D0B-5CB463527BE8">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:51:42 UTC</createdTime>
+<generatorID>3115D941-9D84-E637-98B5-82998FC688E5</generatorID>
+<ownerDesignName>F15F8_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="effective_date" id="4D145425-C79F-92AF-425A-9E677B63886F">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:51:42 UTC</createdTime>
+<generatorID>9C75F070-3748-2039-21E2-2B27C32EDE09</generatorID>
+<ownerDesignName>F15F8_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="entered_by_id" id="4831549B-D9EB-C70B-4D60-B982F5A4B8B5">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:51:42 UTC</createdTime>
+<generatorID>B96A39F0-80E3-666E-BDFE-6704A204BE24</generatorID>
+<ownerDesignName>F15F8_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="F15F8_RFE_Except_Req_rfe_id" id="F516AF55-A7BB-5D85-2EAB-AE62254F50B9">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:51:42 UTC</createdTime>
+<generatorID>50EBEEAF-CBAF-12C4-2460-565269238FB9</generatorID>
+<ownerDesignName>F15F8_logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DE60E78E-1B82-5E88-64A3-BE65F325D2B2" referredColumn="E59F80BD-3E6F-4C50-72B0-D2D330D8E1FF"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DA4E8627-A93B-660B-2C10-B81193D6FD1D" name="F15F8_History_PK">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:51:42 UTC</createdTime>
+<generatorID>627025D0-CF25-07EF-909B-E7FFCECBDC2B</generatorID>
+<ownerDesignName>F15F8_logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="269FC99F-1863-4609-D797-A2757121F366"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0815C41A-D9D9-7AF1-BB56-3351E33E69EB" name="F15F8_History_F15F8_RFE_Except_Req_FK">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-24 00:51:42 UTC</createdTime>
+<generatorID>C2F68F3D-D271-0CEF-D940-0E78EF186526</generatorID>
+<ownerDesignName>F15F8_logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F516AF55-A7BB-5D85-2EAB-AE62254F50B9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

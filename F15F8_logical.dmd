@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="F15F8_logical" id="868CE105-C31C-7799-451A-29359CE91B9D" version="3.5">
+<createdBy>Sierra</createdBy>
+<createdTime>2015-11-23 23:41:09 UTC</createdTime>
+<ownerDesignName>F15F8_logical</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>868CE105-C31C-7799-451A-29359CE91B9D</designId>
+</OSDM_Design>
